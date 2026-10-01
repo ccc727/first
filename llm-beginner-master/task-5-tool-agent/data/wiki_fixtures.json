@@ -1,0 +1,30 @@
+{
+  "_comment": "离线维基百科知识夹具：无外网时 wiki 工具的回退数据源。每条含 query（条目名）、aliases（别名/中文名）与 text（条目摘要正文）。内置事实仅用于本教学任务的离线自检，联网时 wiki 工具仍优先走维基百科 API。",
+  "entries": [
+    {
+      "query": "Alan Turing",
+      "aliases": ["图灵", "阿兰·图灵", "艾伦·图灵", "Alan M. Turing", "Turing"],
+      "text": "Alan Turing（艾伦·图灵，1912 年 6 月 23 日—1954 年 6 月 7 日）是英国计算机科学家、数学家、逻辑学家与密码分析学家，被公认为计算机科学与人工智能之父。1936 年，图灵提出了抽象计算模型「图灵机」（Turing machine），用一条无限长的纸带和一套读写规则刻画了「可计算」的直观概念，为现代计算机奠定了理论基础。二战期间他在布莱切利园参与破译德国 Enigma 密码。1950 年他发表论文《计算机器与智能》，提出了著名的图灵测试。"
+    },
+    {
+      "query": "图灵机",
+      "aliases": ["Turing machine", "图灵机模型", "通用图灵机"],
+      "text": "图灵机（Turing machine）是一种抽象计算模型，由英国数学家阿兰·图灵（Alan Turing）于 1936 年提出，用于形式化「算法」与「可计算性」的概念。它由一条无限长的纸带、一个读写头、一个有限状态控制器和一组转移规则构成。图灵机虽然结构极简，却能模拟任何可计算过程；「丘奇-图灵论题」据此把「可计算函数」等同于图灵机可计算的函数。因此，图灵机的发明者是 Alan Turing，中文常译作图灵。"
+    },
+    {
+      "query": "Geoffrey Hinton",
+      "aliases": ["辛顿", "杰弗里·辛顿", "Geoffrey E. Hinton", "Hinton"],
+      "text": "Geoffrey Hinton（杰弗里·辛顿，1947 年 12 月 6 日出生）是英国裔加拿大计算机科学家与认知心理学家，被誉为「深度学习之父」。他是反向传播算法（1986 年与 David Rumelhart、Ronald Williams 共同推广）的主要推动者之一，也是玻尔兹曼机、dropout 等方法的提出者。2012 年他与 Alex Krizhevsky、Ilya Sutskever 提交的 AlexNet 在 ImageNet 竞赛中大幅领先，掀起了深度学习热潮。2018 年他获得图灵奖，2024 年获得诺贝尔物理学奖。出生年份：1947 年。"
+    },
+    {
+      "query": "Transformer (机器学习模型)",
+      "aliases": ["Transformer", "Transformer 模型", "Transformer (machine learning model)", "变换器模型", "自注意力模型"],
+      "text": "Transformer 是一种基于自注意力机制（self-attention）的神经网络架构，由 Google 团队在 2017 年的论文《Attention Is All You Need》中提出。它抛弃了循环与卷积结构，完全依靠多头注意力并行建模序列，显著提升了训练效率与长距离依赖建模能力。论文发表年份为 2017 年；此后基于 Transformer 的 BERT（2018）、GPT 系列等模型成为自然语言处理与大模型的基础架构。"
+    },
+    {
+      "query": "自注意力机制",
+      "aliases": ["self-attention", "注意力机制"],
+      "text": "自注意力机制（self-attention）让序列中的每个位置都能直接关注其他所有位置，并按相关性加权求和，从而在常数级路径长度内建立长距离依赖。它是 Transformer（2017 年论文《Attention Is All You Need》）的核心组件，通过 Query/Key/Value 三组投影与缩放点积注意力计算，并常以多头（multi-head）形式并行使用。"
+    }
+  ]
+}

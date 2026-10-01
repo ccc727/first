@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 运行产物（按需保留；代码会自动重建）
+任务*/code/results/*.csv
+任务*/code/results/*.log
+任务*/code/results/*.pt
+*.log
+*_out.log
+*_err.log
+
+# 临时/调试文件
+probe*.txt
+probe*.py
+smoke*.py
+*_probe.py
+*_verify_*.py
+pkgs.json
+
+# 数据集较大时按需忽略（如需提交数据请删除下面两行）
+任务一/data/ogb/

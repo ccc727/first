@@ -1,0 +1,58 @@
+# ===== Python 虚拟环境（体积最大，必须忽略）=====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ===== 大体积模型权重（超过 GitHub 100MB 单文件限制）=====
+# 本地下载/训练产生，请按 README 说明自行下载，不要提交
+llm-beginner-master/models/
+llm-beginner-master/task-3-sft-dpo/models/
+llm-beginner-master/task-4-rag/models/
+**/model.safetensors
+**/pytorch_model.bin
+**/*.onnx
+**/*.ckpt
+**/*.pt
+**/*.pth
+**/*.bin
+**/*.h5
+**/*.msgpack
+**/*.zip
+**/*.tar
+**/*.tar.gz
+**/*.tgz
+
+# ===== 训练产物 / checkpoint =====
+_smoke/checkpoints/
+_smoke/models/
+**/checkpoints/
+runs/
+wandb/
+outputs/
+lightning_logs/
+
+# ===== 较大的原始数据集 =====
+graph_beginner-main/任务*/data/
+transformers_tasks-main/LLM/LLMsTrainer/data/
+llm-beginner-master/task-2-mini-gpt/data/
+
+# ===== HuggingFace 缓存 =====
+.cache/huggingface/
+**/hub/
+
+# ===== 工具 / 编辑器产物 =====
+.claude/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
